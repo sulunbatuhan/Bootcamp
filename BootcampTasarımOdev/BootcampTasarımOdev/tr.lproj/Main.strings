@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Post"; ObjectID = "4E7-Rh-zoT"; */
+"4E7-Rh-zoT.text" = "Post";
+
+/* Class = "UILabel"; text = "Connections"; ObjectID = "6E6-Hj-ARO"; */
+"6E6-Hj-ARO.text" = "Bağlantılar";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "7vz-Bo-uOz"; */
+"7vz-Bo-uOz.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8IC-qB-i8m"; */
+"8IC-qB-i8m.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "40"; ObjectID = "Bzz-hX-Unp"; */
+"Bzz-hX-Unp.text" = "40";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "D2Z-vD-xB9"; */
+"D2Z-vD-xB9.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "€12"; ObjectID = "KN6-KV-xZm"; */
+"KN6-KV-xZm.text" = "200₺";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QnA-3c-Yr7"; */
+"QnA-3c-Yr7.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; RKX-7q-FJ2.segmentTitles[0] = "Your Stats"; ObjectID = "RKX-7q-FJ2"; */
+"RKX-7q-FJ2.segmentTitles[0]" = "İstatistikler";
+
+/* Class = "UISegmentedControl"; RKX-7q-FJ2.segmentTitles[1] = "Global"; ObjectID = "RKX-7q-FJ2"; */
+"RKX-7q-FJ2.segmentTitles[1]" = "Dünya";
+
+/* Class = "UILabel"; text = "Your Connectivity Plan"; ObjectID = "RWt-kS-5Ay"; */
+"RWt-kS-5Ay.text" = "Hareket Planın";
+
+/* Class = "UILabel"; text = "Total Saved"; ObjectID = "Thv-Nd-ufK"; */
+"Thv-Nd-ufK.text" = "Toplam Kazanç";
+
+/* Class = "UILabel"; text = "€500"; ObjectID = "bcn-hY-T7m"; */
+"bcn-hY-T7m.text" = "10.000₺";
+
+/* Class = "UILabel"; text = "213"; ObjectID = "g8k-F8-fqk"; */
+"g8k-F8-fqk.text" = "213";
+
+/* Class = "UILabel"; text = "İstanbul/Turkey"; ObjectID = "l4r-o6-Bll"; */
+"l4r-o6-Bll.text" = "İstanbul/Turkey";
+
+/* Class = "UILabel"; text = "You will taste exquisite menu"; ObjectID = "pky-8Z-hiC"; */
+"pky-8Z-hiC.text" = "Enfes menüyü tadacaksınız";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sNj-1y-1Et"; */
+"sNj-1y-1Et.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Steak House"; ObjectID = "tvr-nB-0Lm"; */
+"tvr-nB-0Lm.text" = "Et lokantası";
