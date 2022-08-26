@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0lu-Rt-jAC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-lC-4t5">
+                                <rect key="frame" x="30" y="377" width="354" height="10"/>
+                                <color key="backgroundColor" name="FontColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="eLU-UW-NgK"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="z1x-vm-OoT">
+                                <rect key="frame" x="30" y="407" width="354" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp6-1u-zeI">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="48"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="C">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ClearAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aey-SA-X5X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reB-cR-YcE">
+                                        <rect key="frame" x="90" y="0.0" width="84" height="48"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+ / -">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="mutlakValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEm-zI-LMg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9l-CT-vCr">
+                                        <rect key="frame" x="180" y="0.0" width="84" height="48"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="%">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTx-mH-yek">
+                                        <rect key="frame" x="270" y="0.0" width="84" height="48"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="/">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="Bolme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3F-HJ-ITN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3i-95-cdC">
+                                <rect key="frame" x="30" y="495" width="354" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rA-7I-o9i">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="7">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LvB-6O-e66"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbw-uL-Md7">
+                                        <rect key="frame" x="88.5" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="8">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQx-aV-jYf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2l-Tg-v5q">
+                                        <rect key="frame" x="177" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="9">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phl-1a-3FJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENk-SY-udk">
+                                        <rect key="frame" x="265.5" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="*">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="carp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ojh-QT-Bfy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRr-E4-SrF">
+                                <rect key="frame" x="30" y="673" width="354" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgS-s3-A6E">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="1">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9B-YH-tz8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFC-PR-k62">
+                                        <rect key="frame" x="88.5" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="2">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbv-Qi-hlj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK8-ak-2Kj">
+                                        <rect key="frame" x="177" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="3">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWt-tm-vQn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNL-v9-eho">
+                                        <rect key="frame" x="265.5" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="topla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHL-iI-kMk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-wv-Etw">
+                                <rect key="frame" x="30" y="762" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGT-iS-Wft">
+                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="50"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="00">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numDoubleZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6Y-bV-BdX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPf-nb-UPt">
+                                        <rect key="frame" x="90.5" y="0.0" width="82.5" height="50"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="0">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ap4-Tr-wgr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE0-6Z-btL">
+                                        <rect key="frame" x="181" y="0.0" width="82.5" height="50"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=".">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqL-ag-8oo">
+                                        <rect key="frame" x="271.5" y="0.0" width="82.5" height="50"/>
+                                        <color key="backgroundColor" name="FontColor"/>
+                                        <color key="tintColor" name="Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="=" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Sonuc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSn-yG-2ZJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="het-TP-XyJ">
+                                <rect key="frame" x="30" y="584" width="354" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxd-UU-h92">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="4">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhT-T1-2IN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FS-q6-zl6">
+                                        <rect key="frame" x="88.5" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="5">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2l-bd-b9v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-cC-pGE">
+                                        <rect key="frame" x="177" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="6">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2Q-KE-Yrd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-qc-s4M">
+                                        <rect key="frame" x="265.5" y="0.0" width="88.5" height="49"/>
+                                        <color key="tintColor" name="FontColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-">
+                                            <fontDescription key="titleFontDescription" name="Aboreto-Regular" family="Aboreto" pointSize="29"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cikar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JuP-1H-oWa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kf-5f-thg">
+                                <rect key="frame" x="285" y="260" width="98.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" name="FontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I79-EJ-k4X">
+                                <rect key="frame" x="268" y="133" width="115.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" name="FontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="I79-EJ-k4X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="2KO-e5-N1Y"/>
+                            <constraint firstItem="D3i-95-cdC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="5Z3-ST-ded"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1x-vm-OoT" secondAttribute="trailing" constant="30" id="8bg-qx-8wp"/>
+                            <constraint firstAttribute="trailing" secondItem="I79-EJ-k4X" secondAttribute="trailing" constant="30" id="DzP-5F-M7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kf-5f-thg" secondAttribute="trailing" constant="30" id="GAU-dg-ChC"/>
+                            <constraint firstItem="qcd-wv-Etw" firstAttribute="top" secondItem="JRr-E4-SrF" secondAttribute="bottom" constant="40" id="JPU-r7-BbO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRr-E4-SrF" secondAttribute="trailing" constant="30" id="MEg-Wf-gM0"/>
+                            <constraint firstItem="0kf-5f-thg" firstAttribute="top" secondItem="I79-EJ-k4X" secondAttribute="bottom" constant="80" id="NnN-DC-DPL"/>
+                            <constraint firstItem="TQH-lC-4t5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="SlT-LO-Izy"/>
+                            <constraint firstItem="het-TP-XyJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bBI-Vg-0TV"/>
+                            <constraint firstItem="qcd-wv-Etw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bNN-Ef-usD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TQH-lC-4t5" secondAttribute="trailing" constant="30" id="bUu-eY-Qc2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="het-TP-XyJ" secondAttribute="trailing" constant="30" id="gTJ-Z3-7pu"/>
+                            <constraint firstItem="JRr-E4-SrF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jSE-b4-j5P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qcd-wv-Etw" secondAttribute="trailing" constant="30" id="kaD-u1-bNJ"/>
+                            <constraint firstItem="JRr-E4-SrF" firstAttribute="top" secondItem="het-TP-XyJ" secondAttribute="bottom" constant="40" id="kvo-uG-d5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qcd-wv-Etw" secondAttribute="bottom" constant="50" id="lAD-Lf-dXj"/>
+                            <constraint firstItem="z1x-vm-OoT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="lTh-Ie-Vkg"/>
+                            <constraint firstItem="het-TP-XyJ" firstAttribute="top" secondItem="D3i-95-cdC" secondAttribute="bottom" constant="40" id="oN7-1M-fYM"/>
+                            <constraint firstItem="D3i-95-cdC" firstAttribute="top" secondItem="z1x-vm-OoT" secondAttribute="bottom" constant="40" id="vy7-nC-tVX"/>
+                            <constraint firstItem="z1x-vm-OoT" firstAttribute="top" secondItem="TQH-lC-4t5" secondAttribute="bottom" constant="20" id="wox-1Q-wMw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3i-95-cdC" secondAttribute="trailing" constant="30" id="z0j-Nj-6ps"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BLY-Rg-uQ0">
+                        <barButtonItem key="leftBarButtonItem" image="wrench.and.screwdriver" catalog="system" id="as5-F0-pGy">
+                            <color key="tintColor" name="FontColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblGosterim" destination="I79-EJ-k4X" id="RXr-V7-aar"/>
+                        <outlet property="lblSonuc" destination="0kf-5f-thg" id="bCp-ou-ugS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hOR-OP-kb6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0lu-Rt-jAC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4MP-lH-4Wp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UAL-Kp-9x1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lj-jL-QDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-336" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wrench.and.screwdriver" catalog="system" width="128" height="120"/>
+        <namedColor name="Color">
+            <color red="0.99599999189376831" green="0.98799997568130493" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="FontColor">
+            <color red="0.4779999852180481" green="0.17599999904632568" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
